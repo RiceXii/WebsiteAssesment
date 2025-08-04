@@ -12,6 +12,10 @@ body {
   box-sizing:border-box;
 }
 
+
+/* ---NAVIGATION BAR--- */
+
+
 .navbar {
   background-color: rgb(0, 78, 66);
   height: 120px;
@@ -39,6 +43,10 @@ body {
 
 }
 
+
+/* ---BREAD CRUMB--- */
+
+
 .breadcrumb ul {
   list-style: none;
   display: flex;
@@ -65,6 +73,10 @@ body {
   color: rgb(0, 78, 66); 
 }
 
+
+/* ---FOOTER--- */
+
+
 footer{
   padding-left: 40px;
   padding-right: 40px;
@@ -79,4 +91,34 @@ footer{
   display:flex;
   flex-direction:column;
   justify-content: space-between;
+}
+
+.column1 {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50%;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.whitelink {
+  color:white;
+}
+
+.whitelink a {
+  color:white;
+}
+
+.email {
+  color:white;
+  margin-bottom:3rem;
+}
+
+.email a {
+  color:white;
+  margin-bottom:3rem;
 }
