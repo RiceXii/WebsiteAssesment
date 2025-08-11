@@ -10,6 +10,8 @@ body {
 
 *{
   box-sizing:border-box;
+  overflow-x:hidden;
+  font-size:18px;
 }
 
 
@@ -77,9 +79,11 @@ body {
 /* ---FOOTER--- */
 
 
+
 footer{
-  padding-left: 160px;
-  padding-right: 160px;
+  margin-top: -11px;
+  padding-left: 80px;
+  padding-right: 150px;
   background-color: rgb(0, 78, 66);
   background-image: url("images/Digital_Rise\ pattern_landscape\ -\ Burnside\ pounamu\ \(fade\).jpg");
   background-size: contain;
@@ -117,30 +121,27 @@ footer{
   display: flex;
   flex-direction: row;
   flex: 1;
+  gap:100px;
 }
 
-.whitelink {
+.whitelink, .whitelink a, p#email, p#email a {
   color:white;
+  text-decoration: none;
 }
 
-.whitelink a {
-  color:white;
+.whitelink a:hover, .whitelink a a:hover, p#email a:hover, p#email a a:hover {
+  color:rgb(0, 171, 142);
+  text-decoration: none;
 }
 
-.email {
-  color:white;
-  margin-bottom:3rem;
+.two-column{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left:140px;
+  margin-right:140px;
+  margin-top:100px;
 }
 
-.email a {
-  color:white;
-  margin-bottom:3rem;
-}
-
-p#email {
-  color:white;
-}
-
-p#email a{
-  color:white;
+.info{
+  margin-right:200px;
 }
