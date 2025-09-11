@@ -22,6 +22,8 @@ body {
   padding: 0 1.25rem;
 }
 
+
+
 /* HERO IMAGE */
 
 .heroimage{
@@ -116,8 +118,12 @@ body {
 }
 
 .overviewimage img {
-  width: 70%;
+  
   text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  max-width: 500px;
 }
 
 .overviewtitle {
@@ -133,23 +139,31 @@ body {
 .block-1 {
   background-color: rgb(0, 78, 66) !important;
   padding: 6.25rem 6.25rem;
+
 }
 
-.block-1 .two-column{
-  margin: 0rem 3.25rem;
-  gap:1rem;
-}
 
 .block1info {
   margin-left: 3.75rem;
   margin-right: 8.75rem;
   color: white;
   align-self:center;
+  max-width:40rem;
+}
+
+.block-1 {
+  padding: 4rem 1rem;
+}
+
+.block-1 .two-column {
+  margin: 0 auto;
 }
 
 .block1image img {
-  width: 60%;
-  margin-left: 4.0625rem;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  max-width: 500px;
 }
 
 /* ---TRIPLE COLUMN--- */
@@ -165,9 +179,11 @@ body {
   text-align: center;
 }
 
+
 .triple-1 p, .triple-2 p, .triple-3 p{
-  margin-left:3rem;
-  margin-right:3rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+ 
 }
 
 .triple-column img {
@@ -179,7 +195,7 @@ body {
 .footerimage{
   min-height:60rem; 
   width: 100%;
-
+  margin-top:-0.7rem;
   box-sizing: border-box;
   background-image: url('images/Lion\ dance\ \(7\).png');
   background-position: center; 
@@ -247,4 +263,81 @@ p#email a:hover,
 p#email a a:hover {
   color: rgb(0, 171, 142);
   text-decoration: none;
+} 
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .breadcrumb ul {
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .overviewimage img,
+  .block1image img {
+    margin: 0 auto;
+  }
+
+  .block-1 {
+    padding: 3rem 1.5rem;
+  }
+
+  .triple-column {
+    grid-template-columns: 1fr; 
+    margin: 2rem;
+  }
+
+  footer {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .footercontent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .column1 img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  .column2 {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px; 
+  }
+
+  .navbar img {
+    width: 10rem;
+  }
+
+  .overviewtitle h1 {
+    font-size: 2rem;
+  }
 }
