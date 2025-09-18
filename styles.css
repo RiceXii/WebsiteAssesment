@@ -169,8 +169,11 @@ a:hover{
 
 .block-1 p {
   color: white;
-  
-  
+}
+
+.block-1 a{
+  color:white;
+  text-decoration: none;
 }
 
 .block-1 {
