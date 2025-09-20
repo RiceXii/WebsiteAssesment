@@ -153,7 +153,7 @@ a:hover{
 
 /* ---BLOCK 1--- */
 
-.block-1 {
+.block-1, .block-2 {
   background-color: rgb(0, 78, 66) !important;
   padding: 6.25rem 6.25rem;
   text-align:center;
@@ -161,38 +161,38 @@ a:hover{
   justify-content: center;
 }
 
-.block-1 h2 {
+.block-1 h2, .block-2 h2 {
   color: rgb(0, 171, 142);
   margin-bottom: 2rem;
   font-size: 2.5rem;
 }
 
-.block-1 p {
+.block-1 p, .block-2 p {
   color: white;
 }
 
-.block-1 a{
+.block-1 a, .block-2 a{
   color:white;
   text-decoration: none;
 }
 
-.block-1 {
+.block-1, .block-2 {
   padding: 4rem 1rem;
 }
 
-.block-1 .two-column {
+.block-1 .two-column, .block-2 .two-column {
   margin: auto;
   align-items: center;
   justify-content: space-between;
 }
 
-.block-1 img {
+.block-1 img, .block-2 img{
   width: 100%;
   margin: auto;
   max-width: 500px;
 }
 
-.block-1 .info{
+.block-1 .info, .block-2 .info{
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -201,17 +201,26 @@ a:hover{
   text-align: center;
 }
 
+.block-2 .info{
+  margin-right: 4rem;
+}
 
+/* ---Music and Lion--- */
 
-/* ---TRIPLE COLUMN--- */
+.double_title {
+  text-align: center;
+  padding-top: 6.25rem;
+  font-size: 2rem;
+  color: rgb(0, 171, 142);
+}
 
-.triple-column {
+.double_column {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
-  padding-left: 7.5rem;
-  padding-right: 7.5rem;
-  padding-top: 8.75rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  padding-top: 4.75rem;
   padding-bottom: 8.75rem;
   text-align: center;
   
@@ -219,7 +228,8 @@ a:hover{
 
 
 
-.triple p{
+.double p{
+  margin-top: 3rem;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
   
@@ -362,12 +372,12 @@ img {
   }
 
 
-  .triple-column {
+  .double_column {
     grid-template-columns: 1fr; 
     margin: 2rem;
   }
 
-  .triple p{
+  .double p{
     margin:0;
     max-width:none;
   }
